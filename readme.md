@@ -57,7 +57,7 @@ Additionally you need to install at least one voice
     
 Then install the plugin
 
-`mycroft-pip install git+https://github.com/OpenJarbas/mycroft-tts-plugin-softcatala`
+`mycroft-pip install git+https://github.com/OpenJarbas/mycroft-tts-plugin-cotovia`
 
 ## Configuration
 
