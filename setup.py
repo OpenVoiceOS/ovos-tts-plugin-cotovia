@@ -2,16 +2,16 @@
 from setuptools import setup
 
 PLUGIN_ENTRY_POINT = 'cotovia_tts_plug = ' \
-                     'mycroft_tts_plugin_cotovia:CotoviaTTSPlugin'
+                     'jarbas_tts_plugin_cotovia:CotoviaTTSPlugin'
 setup(
-    name='mycroft-tts-plugin-cotovia',
+    name='jarbas-tts-plugin-cotovia',
     version='0.1',
     description='A galician/spanish tts plugin for mycroft',
-    url='https://github.com/JarbasIberianLanguageResources/mycroft-tts-plugin-cotovia',
+    url='https://github.com/JarbasLingua/jarbas-tts-plugin-cotovia',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
-    packages=['mycroft_tts_plugin_cotovia'],
+    packages=['jarbas_tts_plugin_cotovia'],
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',

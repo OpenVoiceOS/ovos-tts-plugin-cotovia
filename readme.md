@@ -52,7 +52,7 @@ Additionally you need to install at least one voice
     
 Then install the plugin
 
-`mycroft-pip install mycroft-tts-plugin-cotovia`
+`mycroft-pip install jarbas-tts-plugin-cotovia`
 
 ## Configuration
 
