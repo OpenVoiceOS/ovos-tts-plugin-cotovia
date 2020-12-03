@@ -7,7 +7,7 @@ setup(
     name='mycroft-tts-plugin-cotovia',
     version='0.1',
     description='A galician/spanish tts plugin for mycroft',
-    url='https://github.com/OpenJarbas/mycroft-tts-plugin-cotovia',
+    url='https://github.com/JarbasIberianLanguageResources/mycroft-tts-plugin-cotovia',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',

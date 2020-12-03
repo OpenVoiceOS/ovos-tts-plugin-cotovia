@@ -12,12 +12,7 @@ Cotovia is a unit-selection text-to-speech system, i.e., generates the synthetic
 concatenation of prerecorded segments. Cotovia determines the sequence of sounds, its intonation and 
 duration from the input text. Actually several intonation contours are considered in parallel and for
 each one a sequence of speech units is selected. The final intonation contours is selected according to 
-the suitability of the sequence of speech units found. Obviously the computational load and, therefore,
-the time of execution depends on the number of speech units of the speaker and the number of parallel
-intonation contours considered. The number of parallel intonation contours iniatially considered may be
- specified by the optional parameter -N (default 50), although the speech unit search is only performed for 
-the M most different contours (parameter -M, default 10). Of course, the quality also depends on the number
- of speech units  and on the number of parallel intonation contours.
+the suitability of the sequence of speech units found. 
  
  
 ### Voices
@@ -57,7 +52,7 @@ Additionally you need to install at least one voice
     
 Then install the plugin
 
-`mycroft-pip install git+https://github.com/OpenJarbas/mycroft-tts-plugin-cotovia`
+`mycroft-pip install mycroft-tts-plugin-cotovia`
 
 ## Configuration
 
