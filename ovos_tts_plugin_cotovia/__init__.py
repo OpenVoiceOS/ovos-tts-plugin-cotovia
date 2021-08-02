@@ -10,7 +10,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from mycroft.tts import TTS, TTSValidator
+from ovos_plugin_manager.templates.tts import TTS, TTSValidator
 import subprocess
 from tempfile import gettempdir
 from os.path import join, isdir

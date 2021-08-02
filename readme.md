@@ -2,10 +2,6 @@
 
 Mycroft TTS plugin for [Cotovia TTS](http://gtm.uvigo.es/cotovia)
 
-The "plugins" are pip install-able modules that provide new TTS engines for mycroft
-
-more info in the [docs](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/plugins)
-
 ### About Cotovia
 
 Cotovia is a unit-selection text-to-speech system, i.e., generates the synthetic speech signal as a
@@ -52,14 +48,14 @@ Additionally you need to install at least one voice
     
 Then install the plugin
 
-`mycroft-pip install jarbas-tts-plugin-cotovia`
+`pip install ovos-tts-plugin-cotovia`
 
 ## Configuration
 
 ```json
   "tts": {
-    "module": "cotovia_tts_plug",
-    "cotovia_tts_plug": {
+    "module": "ovos-tts-plugin-cotovia",
+    "ovos-tts-plugin-cotovia": {
       "voice": "iago"
     }
   }
@@ -78,8 +74,8 @@ Additional configuration params are available
 
 ```json
   "tts": {
-    "module": "cotovia_tts_plug",
-    "cotovia_tts_plug": {
+    "module": "ovos-tts-plugin-cotovia",
+    "ovos-tts-plugin-cotovia": {
       "voice": "sabela",
       "lang": "es",
       "pitch_scale_factor": 80,
