@@ -3,9 +3,12 @@ from setuptools import setup
 
 PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-cotovia = ' \
                      'ovos_tts_plugin_cotovia:CotoviaTTSPlugin'
+CONFIG_ENTRY_POINT = 'ovos-tts-plugin-cotovia.config = ovos_tts_plugin_cotovia:CotoviaTTSPluginConfig'
+
+
 setup(
     name='ovos-tts-plugin-cotovia',
-    version='0.1.1',
+    version='0.2.0',
     description='A galician/spanish tts plugin for mycroft',
     url='https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia',
     author='JarbasAi',
@@ -32,5 +35,6 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='mycroft ovos plugin tts',
-    entry_points={'mycroft.plugin.tts': PLUGIN_ENTRY_POINT}
+    entry_points={'mycroft.plugin.tts': PLUGIN_ENTRY_POINT,
+                  'mycroft.plugin.tts.config': CONFIG_ENTRY_POINT}
 )
