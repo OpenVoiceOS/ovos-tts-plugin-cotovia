@@ -1,6 +1,6 @@
 ## Description
 
-Mycroft TTS plugin for [Cotovia TTS](http://gtm.uvigo.es/cotovia)
+OVOS TTS plugin for [Cotovia TTS](http://gtm.uvigo.es/cotovia)
 
 ### About Cotovia
 
@@ -8,8 +8,7 @@ Cotovia is a unit-selection text-to-speech system, i.e., generates the synthetic
 concatenation of prerecorded segments. Cotovia determines the sequence of sounds, its intonation and 
 duration from the input text. Actually several intonation contours are considered in parallel and for
 each one a sequence of speech units is selected. The final intonation contours is selected according to 
-the suitability of the sequence of speech units found. 
- 
+the suitability of the sequence of speech units found.
  
 ### Voices
 
@@ -28,7 +27,6 @@ At this time two Galician voices are available at sourceforge. These two voices 
  and execution time.
  
 
-
 ## Install
 
 Download and install [Cotovia](https://sourceforge.net/projects/cotovia/files/Debian%20packages/)
@@ -39,13 +37,14 @@ In order to run Cotovia, you will need to install the following packages:
     cotovia-lang-gl_0.5_all.deb --- Galician linguistic data
     cotovia-lang-es_0.5_all.deb --- Spanish linguistic data
 
-
 Additionally you need to install at least one voice
 
     cotovia-voice-iago_0.5_all.deb
     cotovia-voice-sabela-large_0.5_all.deb
     cotovia-voice-sabela_0.5_all.deb
-    
+
+> arch linux users can find packages converted with 'debtap' in the [releases page](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/releases)
+
 Then install the plugin
 
 `pip install ovos-tts-plugin-cotovia`

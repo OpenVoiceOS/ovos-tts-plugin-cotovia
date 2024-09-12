@@ -18,26 +18,25 @@ from os import makedirs
 from os.path import join
 from tempfile import gettempdir
 
-from ovos_plugin_manager.templates.tts import TTS, TTSValidator
+from ovos_plugin_manager.templates.tts import TTS
 from ovos_utils.log import LOG
 
 
 class CotoviaTTSPlugin(TTS):
     """Interface to cotovia TTS."""
 
-    def __init__(self, lang="es-gl", config=None):
-        super(CotoviaTTSPlugin, self).__init__(
-            lang, config, CotoviaTTSValidator(self), 'wav')
+    def __init__(self, lang="gl-es", config=None):
+        config = config or {}
+        config["lang"] = lang
+        super(CotoviaTTSPlugin, self).__init__(lang=lang, config=config, audio_ext='wav')
         self.pitch_scale_factor = self.config.get("pitch_scale_factor", 100)
         self.time_scale_factor = self.config.get("time_scale_factor", 100)
         self.data_path = self.config.get("data_path") or "/usr/share/cotovia/data"
         if self.voice == "default":
             self.voice = self.get_voices(self.data_path)[0]
         self.bin = self.config.get("bin") or find_executable("cotovia") or "/usr/bin/cotovia"
-        if "gl" in lang:
-            self.lang = "gl"
-        else:
-            self.lang = "es"
+        if self.lang.split("-")[0] not in ["es", "gl"]:
+            raise ValueError(f"unsupported language: {self.lang}")
 
     @staticmethod
     def get_voices(data_path):
@@ -56,7 +55,10 @@ class CotoviaTTSPlugin(TTS):
             Tuple ((str) written file, None)
         """
         # optional kwargs, OPM will send them if they are in message.data
-        lang = lang or self.lang
+        lang = (lang or self.lang).split("-")[0]
+        if lang not in ["es", "gl"]:
+            LOG.warning(f"Unsupported language! using default 'gl'")
+            lang = "gl"
         voice = voice or self.voice
         pitch = pitch_scale_factor or self.pitch_scale_factor
         ts = time_scale_factor or self.time_scale_factor
@@ -88,22 +90,6 @@ class CotoviaTTSPlugin(TTS):
         return set(CotoviaTTSPluginConfig.keys())
 
 
-class CotoviaTTSValidator(TTSValidator):
-    def __init__(self, tts):
-        super(CotoviaTTSValidator, self).__init__(tts)
-
-    def validate_lang(self):
-        lang = self.tts.lang
-        assert lang in ["es", "es-es", "es-gl", "gl"]
-
-    def validate_connection(self):
-        assert subprocess.call("{bin} -v".format(bin=self.tts.bin),
-                               shell=True) == 1
-
-    def get_tts_class(self):
-        return CotoviaTTSPlugin
-
-
 CotoviaTTSPluginConfig = {
     lang: [
         {"lang": lang, "voice": "iago",
@@ -116,5 +102,5 @@ CotoviaTTSPluginConfig = {
 }
 
 if __name__ == "__main__":
-    tts = CotoviaTTSPlugin()
+    tts = CotoviaTTSPlugin(lang="gl-es")
     tts.get_tts("hola mundo", "test.wav", voice="iago")
