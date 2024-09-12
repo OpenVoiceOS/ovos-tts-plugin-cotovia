@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- install docs [\#2](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/2) ([JarbasAl](https://github.com/JarbasAl))
 - feat:semver [\#1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/1) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [0.0.0](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.0.0) (2022-02-15)
