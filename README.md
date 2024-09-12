@@ -1,6 +1,6 @@
 ## Description
 
-Mycroft TTS plugin for [Cotovia TTS](http://gtm.uvigo.es/cotovia)
+OVOS TTS plugin for [Cotovia TTS](http://gtm.uvigo.es/cotovia)
 
 ### About Cotovia
 
