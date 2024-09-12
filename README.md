@@ -29,7 +29,13 @@ At this time two Galician voices are available at sourceforge. These two voices 
 
 ## Install
 
+Install the plugin
+
+`pip install ovos-tts-plugin-cotovia`
+
 Download and install [Cotovia](https://sourceforge.net/projects/cotovia/files/Debian%20packages/)
+
+#### Debian
 
 In order to run Cotovia, you will need to install the following packages:
 
@@ -43,11 +49,20 @@ Additionally you need to install at least one voice
     cotovia-voice-sabela-large_0.5_all.deb
     cotovia-voice-sabela_0.5_all.deb
 
-> arch linux users can find packages converted with 'debtap' in the [releases page](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/releases)
+#### Arch
 
-Then install the plugin
+arch linux users can find packages converted with 'debtap' in the [releases page](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/releases)
 
-`pip install ovos-tts-plugin-cotovia`
+```bash
+sudo pacman -U /home/miro/Transferências/cotovia-0.5-1-x86_64.pkg.tar.zst
+sudo pacman -U /home/miro/Transferências/cotovia-lang-es-0.5-1-any.pkg.tar.zst 
+sudo pacman -U /home/miro/Transferências/cotovia-lang-gl-0.5-1-any.pkg.tar.zst 
+sudo pacman -U /home/miro/Transferências/cotovia-voice-iago-0.5-1-any.pkg.tar.zst 
+sudo pacman -U /home/miro/Transferências/cotovia-voice-sabela-0.5-1-any.pkg.tar.zst 
+sudo pacman -U /home/miro/Transferências/cotovia-voice-sabela-large-0.5-1-any.pkg.tar.zst 
+```
+
+otherwise here is a guide [how to install a .deb package in arch linux](https://www.baeldung.com/linux/arch-install-deb-package)
 
 ## Configuration
 
