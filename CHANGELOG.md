@@ -1,18 +1,12 @@
 # Changelog
 
-## [0.4.1a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.1a1) (2024-09-12)
+## [0.4.2a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.2a1) (2025-03-26)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.0.0...0.4.1a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.1...0.4.2a1)
 
 **Merged pull requests:**
 
-- fix:setup.py [\#3](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/3) ([JarbasAl](https://github.com/JarbasAl))
-- install docs [\#2](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/2) ([JarbasAl](https://github.com/JarbasAl))
-- feat:semver [\#1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/1) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.0.0](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.0.0) (2022-02-15)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/56e3536410b70842e1b31c5f030ebd7bf62079c1...0.0.0)
+- Aarch64 [\#5](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/5) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
