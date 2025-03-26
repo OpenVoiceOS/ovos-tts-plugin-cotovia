@@ -51,7 +51,7 @@ Additionally you need to install at least one voice
 
 #### Arch
 
-arch linux users can find packages converted with 'debtap' in the [releases page](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/releases)
+arch linux users can find packages converted with 'debtap' in the [releases page](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/releases/tag/0.4.1)
 
 ```bash
 sudo pacman -U /home/miro/Transferências/cotovia-0.5-1-x86_64.pkg.tar.zst
