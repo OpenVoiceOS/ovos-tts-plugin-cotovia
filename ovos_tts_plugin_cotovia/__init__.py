@@ -13,11 +13,10 @@
 import os
 import shutil
 import subprocess
-from distutils.spawn import find_executable
 from os import makedirs
 from os.path import join
 from tempfile import gettempdir
-
+import platform
 from ovos_plugin_manager.templates.tts import TTS
 from ovos_utils.log import LOG
 
@@ -34,9 +33,16 @@ class CotoviaTTSPlugin(TTS):
         self.data_path = self.config.get("data_path") or "/usr/share/cotovia/data"
         if self.voice == "default":
             self.voice = self.get_voices(self.data_path)[0]
-        self.bin = self.config.get("bin") or find_executable("cotovia") or "/usr/bin/cotovia"
+        self.bin = self.config.get("bin") or self.find_cotovia()
         if self.lang.split("-")[0] not in ["es", "gl"]:
             raise ValueError(f"unsupported language: {self.lang}")
+
+    @staticmethod
+    def find_cotovia() -> str:
+        path = shutil.which("cotovia") or f"{os.path.dirname(__file__)}/cotovia_{platform.machine()}"
+        if os.path.isfile(path):
+            return path
+        return "/usr/bin/cotovia"
 
     @staticmethod
     def get_voices(data_path):
