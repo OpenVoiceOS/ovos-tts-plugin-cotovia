@@ -13,7 +13,6 @@
 import os
 import shutil
 import subprocess
-from distutils.spawn import find_executable
 from os import makedirs
 from os.path import join
 from tempfile import gettempdir
@@ -40,7 +39,7 @@ class CotoviaTTSPlugin(TTS):
 
     @staticmethod
     def find_cotovia() -> str:
-        path = find_executable("cotovia") or f"{os.path.dirname(__file__)}/cotovia_{platform.machine()}"
+        path = shutil.which("cotovia") or f"{os.path.dirname(__file__)}/cotovia_{platform.machine()}"
         if os.path.isfile(path):
             return path
         return "/usr/bin/cotovia"
