@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.4.2a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.2a1) (2025-03-26)
+## [0.4.3a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.3a1) (2025-06-08)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.1...0.4.2a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.2...0.4.3a1)
 
 **Merged pull requests:**
 
-- Aarch64 [\#5](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/5) ([JarbasAl](https://github.com/JarbasAl))
+- fix: compatibility with ovos-plugin-manager 1.X.X [\#7](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/7) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
