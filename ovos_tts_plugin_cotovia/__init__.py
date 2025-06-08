@@ -10,24 +10,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-import os
-import shutil
-import subprocess
 from os import makedirs
 from os.path import join
-from tempfile import gettempdir
+
+import os
 import platform
+import shutil
+import subprocess
 from ovos_plugin_manager.templates.tts import TTS
+from ovos_utils import classproperty
 from ovos_utils.log import LOG
+from tempfile import gettempdir
 
 
 class CotoviaTTSPlugin(TTS):
     """Interface to cotovia TTS."""
 
-    def __init__(self, lang="gl-es", config=None):
-        config = config or {}
-        config["lang"] = lang
-        super(CotoviaTTSPlugin, self).__init__(lang=lang, config=config, audio_ext='wav')
+    def __init__(self, config=None):
+        config = config or {"lang": "gl-es"}
+        super(CotoviaTTSPlugin, self).__init__(config=config, audio_ext='wav')
         self.pitch_scale_factor = self.config.get("pitch_scale_factor", 100)
         self.time_scale_factor = self.config.get("time_scale_factor", 100)
         self.data_path = self.config.get("data_path") or "/usr/share/cotovia/data"
@@ -85,8 +86,8 @@ class CotoviaTTSPlugin(TTS):
 
         return (wav_file, None)  # No phonemes
 
-    @property
-    def available_languages(self) -> set:
+    @classproperty
+    def available_languages(cls) -> set:
         """Return languages supported by this TTS implementation in this state
         This property should be overridden by the derived class to advertise
         what languages that engine supports.
