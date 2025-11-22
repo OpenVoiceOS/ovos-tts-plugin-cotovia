@@ -40,7 +40,7 @@ class CotoviaTTSPlugin(TTS):
 
     @staticmethod
     def find_cotovia() -> str:
-        path = shutil.which("cotovia") or f"{os.path.dirname(__file__)}/cotovia_{platform.machine()}"
+        path = shutil.which("cotovia") or f"{os.path.dirname(__file__)}/bin/cotovia_{platform.machine()}"
         if os.path.isfile(path):
             return path
         return "/usr/bin/cotovia"
