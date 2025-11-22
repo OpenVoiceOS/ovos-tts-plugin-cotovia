@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.5a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.5a1) (2025-11-22)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.4a1...0.4.5a1)
+
+**Merged pull requests:**
+
+- fix: cotovia missing data files [\#11](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/11) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.4.4a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.4a1) (2025-11-22)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.3...0.4.4a1)
