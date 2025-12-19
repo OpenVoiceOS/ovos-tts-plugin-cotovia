@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.5a3](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.5a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.5a2...0.4.5a3)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency python to 3.14 [\#15](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/15) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.4.5a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.5a2) (2025-12-18)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.5a1...0.4.5a2)
