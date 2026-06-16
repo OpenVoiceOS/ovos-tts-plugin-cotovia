@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.5a5](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.5a5) (2026-06-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.5a4...0.4.5a5)
+
+**Merged pull requests:**
+
+- chore: add missing shared CI workflows [\#19](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/19) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.4.5a4](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.5a4) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.5a3...0.4.5a4)
