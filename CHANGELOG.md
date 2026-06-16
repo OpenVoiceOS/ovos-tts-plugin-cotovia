@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.6a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.6a1) (2026-06-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.5a5...0.4.6a1)
+
+**Merged pull requests:**
+
+- fix: require ovos-plugin-manager\>=2.1.0 for opm.\* entry points and cap ovos-\* deps at next major [\#22](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/22) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.4.5a5](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.5a5) (2026-06-16)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.5a4...0.4.5a5)
