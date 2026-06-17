@@ -31,6 +31,12 @@ dependencies = [
     "ovos-plugin-manager>=2.1.0,<3.0.0",
 ]
 
+[project.optional-dependencies]
+test = [
+    "ovoscope[tts]",
+    "pytest",
+]
+
 [project.urls]
 Homepage = "https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia"
 
