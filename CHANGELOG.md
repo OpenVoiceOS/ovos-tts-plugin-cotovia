@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.6a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.6a2) (2026-06-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.6a1...0.4.6a2)
+
+**Merged pull requests:**
+
+- test: add TTS intelligibility e2e \(ovoscope\) [\#20](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/20) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.4.6a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.6a1) (2026-06-16)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.5a5...0.4.6a1)
