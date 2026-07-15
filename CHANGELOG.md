@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.0a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.5.0a1) (2026-07-15)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.6a2...0.5.0a1)
+
+**Merged pull requests:**
+
+- feat: serve cotovia via ovos-tts-server docker image [\#29](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/29) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.4.6a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.6a2) (2026-06-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.6a1...0.4.6a2)
