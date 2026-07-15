@@ -101,3 +101,20 @@ Additional configuration params are available
 ```
 
 
+## Docker (ovos-tts-server)
+
+A container image runs the plugin as an
+[`ovos-tts-server`](https://github.com/OpenVoiceOS/ovos-tts-server) (ElevenLabs-compatible
+API), built and pushed to GHCR by CI on every push to `dev`/`master`:
+
+```bash
+docker run -p 9666:9666 ghcr.io/openvoiceos/ovos-tts-plugin-cotovia:latest
+curl "http://localhost:9666/synthesize/ola%20mundo?lang=gl" --output ola.wav
+```
+
+The image bundles the cotovia binary (from the wheel) and downloads the Galician
+linguistic data plus the `iago` voice from SourceForge at build time (into
+`/usr/share/cotovia/data`), so the running container is fully offline. The served
+voice/lang are baked in via the `COTOVIA_VOICE` (default `iago`) and `COTOVIA_LANG`
+(default `gl-es`) build args; add other voice `.deb` packages to the Dockerfile and
+rebuild to serve `sabela`. See the bundled `docker-compose.yml`.
