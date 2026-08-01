@@ -1,12 +1,84 @@
 # Changelog
 
-## [0.4.3a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.3a1) (2025-06-08)
+## [0.5.0a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.5.0a2) (2026-08-01)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.2...0.4.3a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.5.0a1...0.5.0a2)
 
 **Merged pull requests:**
 
-- fix: compatibility with ovos-plugin-manager 1.X.X [\#7](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/7) ([JarbasAl](https://github.com/JarbasAl))
+- docs: rewrite README in Simplified Technical English [\#36](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/36) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.5.0a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.5.0a1) (2026-07-15)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.6a2...0.5.0a1)
+
+**Merged pull requests:**
+
+- feat: serve cotovia via ovos-tts-server docker image [\#29](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/29) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.4.6a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.6a2) (2026-06-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.6a1...0.4.6a2)
+
+**Merged pull requests:**
+
+- test: add TTS intelligibility e2e \(ovoscope\) [\#20](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/20) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.4.6a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.6a1) (2026-06-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.5a5...0.4.6a1)
+
+**Merged pull requests:**
+
+- fix: require ovos-plugin-manager\>=2.1.0 for opm.\* entry points and cap ovos-\* deps at next major [\#22](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/22) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.4.5a5](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.5a5) (2026-06-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.5a4...0.4.5a5)
+
+**Merged pull requests:**
+
+- chore: add missing shared CI workflows [\#19](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/19) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.4.5a4](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.5a4) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.5a3...0.4.5a4)
+
+**Merged pull requests:**
+
+- chore\(deps\): update actions/setup-python action to v6 [\#18](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/18) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.4.5a3](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.5a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.5a2...0.4.5a3)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency python to 3.14 [\#15](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/15) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.4.5a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.5a2) (2025-12-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.5a1...0.4.5a2)
+
+**Merged pull requests:**
+
+- chore: Configure Renovate [\#13](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/13) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.4.5a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.5a1) (2025-11-22)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.4a1...0.4.5a1)
+
+**Merged pull requests:**
+
+- fix: cotovia missing data files [\#11](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/11) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.4.4a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.4.4a1) (2025-11-22)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.3...0.4.4a1)
+
+**Merged pull requests:**
+
+- Update requirements.txt [\#9](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/9) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
