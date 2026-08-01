@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.0a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.5.0a2) (2026-08-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.5.0a1...0.5.0a2)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#36](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/pull/36) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.5.0a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/tree/0.5.0a1) (2026-07-15)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-cotovia/compare/0.4.6a2...0.5.0a1)
