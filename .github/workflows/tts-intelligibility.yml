@@ -40,7 +40,7 @@ jobs:
       - name: Setup Python 3.11
         uses: actions/setup-python@v6
         with:
-          python-version: '3.11'
+          python-version: '3.14'
 
       - name: Install Cotovia (binary + Galician data + voice)
         # The cotovia executable, Galician linguistic data and the "iago" voice are
