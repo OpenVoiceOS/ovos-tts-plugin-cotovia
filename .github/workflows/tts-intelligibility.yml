@@ -59,7 +59,7 @@ jobs:
           ls /usr/share/cotovia/data
 
       - name: Cache models (huggingface + plugin data)
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             ~/.cache/huggingface
