@@ -8,7 +8,7 @@
 # /usr/share/cotovia/data. Those are distributed as .deb packages on SourceForge (not
 # in the Ubuntu/Debian apt repos), so they are downloaded and installed at build time.
 # The image build therefore needs network access to SourceForge.
-FROM python:3.11-slim
+FROM python:3.14-slim
 
 # curl to fetch the .deb packages; installing the cotovia .deb also pulls the binary's
 # shared-library dependencies (libexpat1, libasound2, libstdc++6, ...).
